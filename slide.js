@@ -1,3 +1,8 @@
+/*
+    Reference: https://tobiasahlin.com/moving-letters/
+    Date: 2019/11/08
+*/
+
 // Part #1, Home page title
 
 var textWrapper = document.querySelector(".ml14 .letters");

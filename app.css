@@ -52,3 +52,9 @@ ul {
   flex-direction: column;
   margin: 10px 0 0 -40px;
 }
+
+.soon {
+  font-size: 0.6em;
+  float: right;
+  margin-top: 30rem;
+}
