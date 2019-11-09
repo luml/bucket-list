@@ -53,6 +53,11 @@ ul {
   margin: 10px 0 0 -40px;
 }
 
+.footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
+}
 .soon {
   font-size: 0.6em;
   float: right;
