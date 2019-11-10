@@ -12,7 +12,7 @@ textWrapper.innerHTML = textWrapper.textContent.replace(
 );
 
 anime
-  .timeline({ loop: false })
+  .timeline({ loop: true })
   .add({
     targets: ".ml14 .line",
     scaleX: [0, 1],
@@ -42,9 +42,9 @@ anime
 //  Part #2, detail list
 // #1 list display one by one after title
 
-var bucket_1 = document.querySelectorAll(".bucket")[0];
-anime.timeline({ loop: false }).add({
-  targets: ".bucket",
+// var bucket_1 = document.querySelectorAll(".bucket")[0];
+anime.timeline({ loop: true }).add({
+  targets: ".list .1",
   translateY: [1200, 0],
   easing: "easeOutExpo",
   duration: 2000,

@@ -63,3 +63,56 @@ ul {
   float: right;
   margin-top: 30rem;
 }
+.blocks {
+  height: 72vh;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  grid-template-areas: "first-left first-right" "second-left second-right";
+}
+
+.list {
+  text-align: center;
+}
+
+.list:nth-child(1){
+  grid-area: first-left;
+  background-color: thistle;
+  animation: pulse 5s infinite alternate;
+}
+.list:nth-child(2){
+  grid-area: first-right;
+  background-color: gainsboro;
+  animation: versePulse 5s infinite alternate;
+}
+.list:nth-child(3){
+  grid-area: second-left;
+  background-color: gainsboro;
+  animation: versePulse 5s infinite alternate;
+}
+.list:nth-child(4){
+  grid-area: second-right;
+  font-style: italic;
+  text-decoration: line-through;
+  background-color: thistle;
+  animation: pulse 5s infinite alternate;
+}
+
+/* TODO change color */
+@keyframes pulse {
+  0% {
+    background-color: thistle;
+  }
+  100% {
+    background-color: gainsboro;
+  }
+}
+
+@keyframes versePulse {
+  0% {
+    background-color: gainsboro;
+  }
+  100% {
+    background-color: thistle;
+  }
+}
