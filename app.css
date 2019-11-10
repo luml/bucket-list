@@ -60,6 +60,7 @@ ul {
 }
 .soon {
   font-size: 0.6em;
+  opacity: 0.5;
   float: right;
   margin-top: 30rem;
 }
