@@ -52,3 +52,10 @@ anime.timeline({ loop: true }).add({
 });
 
 // Part #3, do left slide, put an article
+function gotoarticle(){
+  window.open('./article.html');
+}
+
+document.querySelector('button').addEventListener('click', function(){
+  alert('Welcome');
+})

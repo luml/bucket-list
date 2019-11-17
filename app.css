@@ -52,8 +52,9 @@ ul {
   flex-direction: column;
   margin: 10px 0 0 -40px;
 }
-
+/* if footer is too heigh, it will block the button, that's why i can't click them before */
 .footer {
+  height: 50px;
   width: 100vw;
   position: fixed;
   bottom: 0px;
@@ -62,7 +63,7 @@ ul {
   font-size: 0.6em;
   opacity: 0.5;
   float: right;
-  margin-top: 30rem;
+  margin-top: 1.6rem;
 }
 .blocks {
   height: 72vh;
