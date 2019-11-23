@@ -118,3 +118,8 @@ ul {
     background-color: thistle;
   }
 }
+
+.article {
+  background: url('./headshot.jpg');
+  background-size: cover;
+}
