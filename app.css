@@ -133,6 +133,27 @@ ul {
 }
 
 .article {
-  background: url('./headshot.jpg');
+  background: url(https://source.unsplash.com/random);
   background-size: cover;
+}
+.article .qutos {
+  opacity: 0.5;
+  margin: 1;
+  width: 400px;
+  height: 400px;
+  background: gainsboro;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.article .qutos span{
+  font-weight: bold;
+  font-family: cursive;
+  margin: 0.5em;
+}
+.article .qutos span:first-child::first-letter{
+  font-size: 3em;
+}
+.article .qutos span:not(:first-child){
+  margin-left: 2em;
 }
