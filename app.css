@@ -118,7 +118,10 @@ ul {
     background-color: thistle;
   }
 }
-
+.welcome {
+  display: flex;
+  justify-content: center;
+}
 .welcomeBtn {
   font-size: 14px;
   border-radius: 1.5em;
