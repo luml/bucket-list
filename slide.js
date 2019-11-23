@@ -55,7 +55,3 @@ anime.timeline({ loop: true }).add({
 function gotoarticle(){
   window.open('./article.html');
 }
-
-document.querySelector('button').addEventListener('click', function(){
-  alert('Welcome');
-})

@@ -119,6 +119,19 @@ ul {
   }
 }
 
+.welcomeBtn {
+  font-size: 14px;
+  border-radius: 1.5em;
+  background: thistle;
+  border-style: none;
+  font-style: italic;
+  width: 10em;
+  height: 3em;
+  margin: 1% 45%;
+  border-style: none;
+  font-style: italic;
+}
+
 .article {
   background: url('./headshot.jpg');
   background-size: cover;
