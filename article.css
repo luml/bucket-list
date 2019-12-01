@@ -1,0 +1,81 @@
+.article {
+  background: url(https://source.unsplash.com/random);
+  background-size: cover;
+}
+.article .qutos {
+  opacity: 0.5;
+  width: 400px;
+  height: 400px;
+  background: gainsboro;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.article .qutos span {
+  font-weight: bold;
+  font-family: cursive;
+  margin: 0.5em;
+}
+.article .qutos span:first-child::first-letter {
+  font-size: 3em;
+}
+.article .qutos span:not(:first-child) {
+  margin-left: 2em;
+}
+/* Make qutos excited too */
+.article .qutos {
+  animation-name: flow-and-shake;
+  animation-duration: calc(var(--speed) * 1s);
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes flow-and-shake {
+  0%,
+  100% {
+    transform: translate(calc(var(--x) * -1%), calc(var(--y) * -1%))
+      rotate(calc(var(--rotation) * -1deg));
+  }
+  50% {
+    transform: translate(calc(var(--x) * 1%), calc(var(--y) * 1%))
+      rotate(calc(var(--rotation) * 1deg));
+  }
+}
+.article .qutos:hover {
+  --speed: 0.1;
+  --x: 1;
+  --y: -1;
+  --rotation: -1;
+}
+
+.headlight {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: gainsboro;
+  transition: all 1s ease;
+  padding: 0.6em;
+  opacity: 0.3;
+}
+.headlight:hover {
+  padding: 4em;
+  opacity: 1;
+}
+
+.headlight > p {
+  margin: -0.7em;
+  font-size: 15px;
+  opacity: 0.7;
+  position: absolute;
+  /*  Hide some words: no hide anymore  */
+  clip: rect(1px, 1200px, 1180px, 0px);
+}
+.headlight:hover > p{
+    /* TODO make it change slowly */
+    font-size: 30px;
+}
+.headlight > p:hover {
+  /* font-size: 30px; */
+  opacity: 1;
+  /*  Show all words  */
+  clip: rect(1px, 1200px, 1180px, 0px);
+}
