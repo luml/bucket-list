@@ -135,6 +135,18 @@ ul {
   border-style: none;
   font-style: italic;
 }
+.welcomeBtn:hover {
+  outline-style: none;
+  box-shadow: 0 0 0 5px gainsboro;
+}
+.welcomeBtn:active {
+  outline-style: none;
+  box-shadow: 0 0 0 5px gainsboro;
+}
+.welcomeBtn:focus {
+  outline-style: none;
+  box-shadow: 0 0 0 5px gainsboro;
+}
 /* Make welcome button excited by shaking */
 .welcomeBtn {
   animation-name: flow-and-shake;
