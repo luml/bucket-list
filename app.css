@@ -78,27 +78,44 @@ ul {
   text-align: center;
 }
 
-.list:nth-child(1){
+.list:nth-child(1) {
   grid-area: first-left;
   background-color: thistle;
   animation: pulse 5s infinite alternate-reverse;
 }
-.list:nth-child(2){
+.list:nth-child(1)::before {
+  content: "❣️";
+}
+.list:nth-child(1):hover::after {
+  content: " miss you dean...";
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 10px;
+  color: cornsilk;
+  opacity: 0.4;
+}
+.list:nth-child(2) {
   grid-area: first-right;
   background-color: gainsboro;
   animation: versePulse 5s infinite alternate-reverse;
 }
-.list:nth-child(3){
+.list:nth-child(3) {
   grid-area: second-left;
   background-color: gainsboro;
   animation: versePulse 5s infinite alternate-reverse;
 }
-.list:nth-child(4){
+.list:nth-child(4) {
   grid-area: second-right;
   font-style: italic;
   text-decoration: line-through;
   background-color: thistle;
   animation: pulse 5s infinite alternate-reverse;
+}
+.list:nth-child(4)::after {
+  content: "🥶";
+}
+.list:nth-child(4)::before {
+  content: "🤪";
 }
 
 /* TODO change color */
@@ -155,17 +172,18 @@ ul {
   animation-timing-function: ease-in-out;
 }
 @keyframes flow-and-shake {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(calc(var(--x) * -1%), calc(var(--y) * -1%))
-    rotate(calc(var(--rotation) * -1deg));
+      rotate(calc(var(--rotation) * -1deg));
   }
   50% {
     transform: translate(calc(var(--x) * 1%), calc(var(--y) * 1%))
-    rotate(calc(var(--rotation) * 1deg));
+      rotate(calc(var(--rotation) * 1deg));
   }
 }
-.welcomeBtn:hover{
-  --speed: .1;
+.welcomeBtn:hover {
+  --speed: 0.1;
   --x: 1;
   --y: -1;
   --rotation: -1;
