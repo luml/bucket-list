@@ -87,7 +87,7 @@ ul {
   content: "❣️";
 }
 .list:nth-child(1):hover::after {
-  content: " miss you dean...";
+  content: " miss you...";
   font-style: italic;
   font-weight: lighter;
   font-size: 10px;
