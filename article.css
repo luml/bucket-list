@@ -1,6 +1,6 @@
 .article {
   /* https://source.unsplash.com/random */
-  background: url('./headshot.jpg');
+  background: url("./headshot.jpg");
   background-size: cover;
 }
 /* .article .qutos {
@@ -70,9 +70,9 @@
   /*  Hide some words: no hide anymore  */
   clip: rect(1px, 1200px, 1180px, 0px);
 }
-.headlight:hover > p{
-    /* TODO make it change slowly */
-    font-size: 30px;
+.headlight:hover > p {
+  /* TODO make it change slowly */
+  font-size: 30px;
 }
 .headlight > p:hover {
   /* font-size: 30px; */
@@ -80,9 +80,27 @@
   /*  Show all words  */
   clip: rect(1px, 1200px, 1180px, 0px);
 }
-
-.love {
+.headlight:hover ~ .love1 {
+  opacity: 0.7;
+  transition: all 1s ease;
+}
+.headlight:hover ~ .love2 {
+  opacity: 0.7;
+  transition: all 1s ease;
+}
+.headlight:hover ~ .love3 {
+  opacity: 0.7;
+  transition: all 1s ease;
+}
+.love1, .love2, .love3 {
   display: flex;
   flex-direction: column;
   font-style: italic;
+  border-radius: 0 100px 0 100px;
+  padding: 40px;
+  width: 200px;
+  height: 50px;
+  background-color: honeyDew;
+  text-align: center;
+  opacity: 0.3;
 }
