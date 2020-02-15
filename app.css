@@ -82,6 +82,7 @@ ul {
   grid-area: first-left;
   background-color: thistle;
   animation: pulse 5s infinite alternate-reverse;
+  text-decoration: line-through;
 }
 .list:nth-child(1)::before {
   content: "❣️";
