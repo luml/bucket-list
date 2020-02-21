@@ -78,7 +78,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: darkorchid;
+  color: dimgray;
 }
 
 .list:nth-child(1) {
@@ -108,6 +108,9 @@ ul {
   font-size: 2.2rem;
   font-family: "Times New Roman", Times, serif;
   text-decoration: line-through;
+}
+.list:nth-child(2) > p:hover {
+  color: black;
 }
 .list:nth-child(3) {
   grid-area: second-left;
