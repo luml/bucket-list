@@ -116,7 +116,7 @@ ul {
   grid-area: second-left;
   background-color: gainsboro;
   animation: versePulse 5s infinite alternate-reverse;
-  font-size: 12px;
+  font-size: 2rem;
   padding: 0 2rem;
 }
 .list:nth-child(4) {

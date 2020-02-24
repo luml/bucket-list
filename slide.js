@@ -65,3 +65,12 @@ me in just the way I liked him. --Andre Aciman Call Me By Your Name: A
 Novel`;
 document.querySelectorAll("span.list")[1].append(p);
 document.querySelectorAll("span.list")[1].style.display = "grid";
+
+// Calm down
+let p_1 = document.createElement("p");
+p_1.style.fontSize = "14px";
+p_1.style.marginTop = "-10rem";
+p_1.innerText = "A tiny reminder: You are doing really well so far";
+
+document.querySelectorAll("span.list")[2].append(p_1);
+document.querySelectorAll("span.list")[2].style.display = "grid";
