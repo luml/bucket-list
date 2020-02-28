@@ -157,6 +157,7 @@ ul {
   justify-content: center;
 }
 .welcomeBtn {
+  font-family: "Dancing Script", cursive;
   font-size: 14px;
   border-radius: 1.5em;
   background: thistle;
