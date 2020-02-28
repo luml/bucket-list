@@ -19,6 +19,10 @@ body {
   padding-bottom: 0.15em;
 }
 
+.letters {
+  font-family: "Dancing Script", cursive;
+}
+
 .ml14 .line {
   opacity: 0;
   position: absolute;
