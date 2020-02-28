@@ -79,6 +79,7 @@ ul {
   justify-content: center;
   align-items: center;
   color: dimgray;
+  font-family: "Dancing Script", cursive;
 }
 
 .list:nth-child(1) {
