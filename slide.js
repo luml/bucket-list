@@ -60,7 +60,7 @@ anime.timeline({ loop: true }).add({
 
 let p = document.createElement("p");
 p.style.fontSize = "10px";
-p.style.margin = "-14rem 0px -4rem 0";
+// p.style.margin = "-14rem 0px -4rem 0";// text will be pushed out of box when screen is getting small
 p.innerText = `What made me blush was the thrilling possibility, unbelievable as I
 wanted it to remain, that he might actually like me, and that he liked
 me in just the way I liked him. --Andre Aciman Call Me By Your Name: A
@@ -71,7 +71,7 @@ document.querySelectorAll("span.list")[1].style.display = "grid";
 // Calm down
 let p_1 = document.createElement("p");
 p_1.style.fontSize = "14px";
-p_1.style.marginTop = "-10rem";
+// p_1.style.marginTop = "-10rem";// text will be pushed out of box when screen is getting small
 p_1.innerText = "A tiny reminder: You are doing really well so far";
 
 document.querySelectorAll("span.list")[2].append(p_1);
