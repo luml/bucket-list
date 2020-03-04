@@ -52,9 +52,11 @@ anime.timeline({ loop: true }).add({
 });
 
 // Part #3, do left slide, put an article
-function gotoarticle() {
-  window.open("./article.html");
-}
+//Q: How to open it in current page/tab in a button
+//A: Replace button with links a
+// function gotoarticle() {
+//   window.open("./article.html", false);
+// }
 
 let p = document.createElement("p");
 p.style.fontSize = "10px";
