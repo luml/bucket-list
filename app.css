@@ -71,11 +71,9 @@ ul {
   margin-top: 1.6rem;
 }
 .blocks {
-  height: 72vh;
   display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: auto;
-  grid-template-areas: "first-left first-right" "second-left second-right";
+  grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+  grid-auto-flow: dense;
 }
 
 .list {
@@ -84,14 +82,22 @@ ul {
   align-items: center;
   color: dimgray;
   font-family: "Dancing Script", cursive;
+  min-height: 8em;
 }
 
-.list:nth-child(1) {
-  grid-area: first-left;
+.list:nth-child(2n) {
   background-color: thistle;
   animation: pulse 5s infinite alternate-reverse;
-  text-decoration: line-through;
   font-style: italic;
+}
+.list:nth-child(2n+1) {
+  background-color: gainsboro;
+  animation: versePulse 5s infinite alternate-reverse;
+  font-style: italic;
+}
+.list:nth-child(1) {
+  height: auto;
+  text-decoration: line-through;
 }
 .list:nth-child(1)::before {
   content: "❣️";
@@ -106,9 +112,6 @@ ul {
   margin: 5px;
 }
 .list:nth-child(2) {
-  grid-area: first-right;
-  background-color: gainsboro;
-  animation: versePulse 5s infinite alternate-reverse;
   font-weight: bold;
   font-size: 2.2rem;
   font-family: "Times New Roman", Times, serif;
@@ -118,18 +121,13 @@ ul {
   color: black;
 }
 .list:nth-child(3) {
-  grid-area: second-left;
-  background-color: gainsboro;
-  animation: versePulse 5s infinite alternate-reverse;
   font-size: 2rem;
   padding: 0 2rem;
+  height: auto;
 }
 .list:nth-child(4) {
-  grid-area: second-right;
   font-style: italic;
   text-decoration: line-through;
-  background-color: thistle;
-  animation: pulse 5s infinite alternate-reverse;
 }
 .list:nth-child(4)::after {
   content: "🥶";

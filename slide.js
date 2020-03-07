@@ -44,10 +44,10 @@ anime
 
 // var bucket_1 = document.querySelectorAll(".bucket")[0];
 anime.timeline({ loop: true }).add({
-  targets: ".list .1",
+  targets: ".list",
   translateY: [1200, 0],
   easing: "easeOutExpo",
-  duration: 2000,
+  duration: 5000,
   delay: 1000
 });
 
