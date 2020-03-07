@@ -43,7 +43,7 @@ anime
 // #1 list display one by one after title
 
 // var bucket_1 = document.querySelectorAll(".bucket")[0];
-anime.timeline({ loop: true }).add({
+anime.timeline({ loop: false }).add({
   targets: ".list",
   translateY: [1200, 0],
   easing: "easeOutExpo",
