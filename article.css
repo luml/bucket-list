@@ -3,50 +3,6 @@
   background: url("./headshot.jpg");
   background-size: cover;
 }
-/* .article .qutos {
-  opacity: 0.5;
-  width: 400px;
-  height: 400px;
-  background: gainsboro;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-}
-.article .qutos span {
-  font-weight: bold;
-  font-family: cursive;
-  margin: 0.5em;
-}
-.article .qutos span:first-child::first-letter {
-  font-size: 3em;
-}
-.article .qutos span:not(:first-child) {
-  margin-left: 2em;
-} */
-/* Make qutos excited too */
-/* .article .qutos {
-  animation-name: flow-and-shake;
-  animation-duration: calc(var(--speed) * 1s);
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-@keyframes flow-and-shake {
-  0%,
-  100% {
-    transform: translate(calc(var(--x) * -1%), calc(var(--y) * -1%))
-      rotate(calc(var(--rotation) * -1deg));
-  }
-  50% {
-    transform: translate(calc(var(--x) * 1%), calc(var(--y) * 1%))
-      rotate(calc(var(--rotation) * 1deg));
-  }
-}
-.article .qutos:hover {
-  --speed: 0.1;
-  --x: 1;
-  --y: -1;
-  --rotation: -1;
-} */
 
 .headlight {
   margin: 0;
@@ -81,19 +37,24 @@
   clip: rect(1px, 1200px, 1180px, 0px);
 }
 
-.headlight:hover ~ h1.smt {
+.headlight ~ .smt {
+  font-size: 6em;
+}
+.headlight:hover ~ .smt {
+  margin: 0.1em;
+  font-size: 12em;
   color: aliceblue;
   transition: all 1s ease;
 }
-.headlight:hover ~ div.love-song {
+.headlight:hover ~ .love-song {
   display: flex;
   transition: all 1s ease;
 }
-.headlight:hover ~ div.love-song > p {
+.headlight:hover ~ .love-song > p {
   filter: blur(0);
   border-radius: 100px 0 100px 0;
   opacity: 0.7;
-  transition: all 1s ease;
+  transition: all calc(1s + 2000ms) ease;
 }
 
 .love1,
